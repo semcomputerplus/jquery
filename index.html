@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <title>Sobota 21 grudnia 2019</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style-smart.css">
 <link rel="stylesheet" href="style-tablet.css">
@@ -12,6 +13,7 @@
 
 <body>
 <div class="wrapper">
+  <div id="handle" class="handle">Menu</div>
   <nav id="nav" class="nav">
     <ul id="menu">
       <li><a href="#">link 1</a></li>
@@ -19,20 +21,14 @@
       <li><a href="#">link 3</a></li>
       <li><a href="#">link 4</a></li>
       <li><a href="#">link 5</a></li>
-      <li class="social"> 
-		  <a href="http://facebook.com"> 
-			  <i class="fa fa-facebook"></i> 
-			  <span class="hide">Link do Facebooka</span> 
-		  </a> 
-	  </li>
-      <li class="social"> 
-		  <a href="http://instagram.com"> 
-			  <i class="fa fa-instagram"></i> 
-			  <span class="hide">Link do Instagrama</span> 
-		  </a> 
-	  </li>
+      <li class="social"> <a href="http://facebook.com"> <i class="fa fa-facebook"></i> <span class="hide">Link do Facebooka</span> </a> </li>
+      <li class="social"> <a href="http://instagram.com"> <i class="fa fa-instagram"></i> <span class="hide">Link do Instagrama</span> </a> </li>
     </ul>
   </nav>
 </div>
+<script>	
+     $("#handle").on("click", function() {
+       $("#menu").toggleClass("closed"); });
+	</script>
 </body>
 </html>
