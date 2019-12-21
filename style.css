@@ -49,10 +49,12 @@ body {
 	flex: 1;
 }
 
+/*Zmiana koloru na podstawie wartości HREF*/
 
+.nav a[href*="facebook"] {
+	color: blue;
+}
 
-
-
-
-
-
+.nav a[href*="instagram"] {
+	color: hotpink;
+}
