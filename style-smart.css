@@ -1,3 +1,15 @@
 @media screen and (max-width:700px){
+		.nav ul {
+		height: auto;
+		flex-wrap: wrap;
+	}
 	
+	.nav li {
+		flex: 0 1 auto;
+	}
+	
+	.nav .social {
+		flex: 0 1 50%;
+	}
+
 }
