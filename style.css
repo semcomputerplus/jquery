@@ -6,6 +6,10 @@ body {
   color: #000;
   font-family: sans-serif;
 }
+.hide {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
 .nav {
   display: flex;
 }
@@ -39,3 +43,19 @@ body {
   background: navy;
   color: #fff;
 }
+
+.nav li {
+	flex: 5;
+}
+
+.nav .social {
+	flex: 1;
+}
+
+
+
+
+
+
+
+
