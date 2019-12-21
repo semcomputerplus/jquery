@@ -10,9 +10,6 @@ body {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
 }
-.nav {
-  display: flex;
-}
 .nav ul {
   background: oldlace;
   width: 100%;
