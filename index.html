@@ -1,34 +1,77 @@
 <!doctype html>
-<html>
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<title>Sobota 21 grudnia 2019</title>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style-smart.css">
-<link rel="stylesheet" href="style-tablet.css">
+<meta charset="utf-8">	
+<link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap&subset=latin-ext" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.scss">
+<title>Dokument bez tytułu</title>
+	<style>
+		body{
+			background-color: bisque;			
+		}
+		ul{
+			font-family: 'Lilita One', cursive;
+			font-size: 24px;
+			list-style: none;
+			padding: 0;
+			text-align: center; 
+		}
+		li{
+			float:left;
+			width: 20%;			
+		}
+		a{
+			display: block;
+			color: inherit;
+			text-decoration: none;
+			background: oldlace;
+			transition: all ease-in .5s;
+			padding: 24px 0;
+		}
+		a:hover, a:focus {
+			background-color: olive;
+			color: white;			
+		}
+		@media screen and (max-width:767px) {
+			li{
+				float: none;
+				width: 100%;				
+			}
+			.closed{
+				display:none;
+			}
+		}
+		@media screen and (min-width:768px) and (max-width:1279px) {
+			li{
+				float: left;
+				width: 50%;		
+			}
+			li:last-child{
+				margin-left: 25%;
+			}
+			.closed{
+				display:none;
+			}
+		}
+		
+	</style>
 </head>
 
 <body>
-<div class="wrapper">
-  <div id="handle" class="handle">Menu</div>
-  <nav id="nav" class="nav">
-    <ul id="menu">
-      <li><a href="#">link 1</a></li>
-      <li><a href="#">link 2</a></li>
-      <li><a href="#">link 3</a></li>
-      <li><a href="#">link 4</a></li>
-      <li><a href="#">link 5</a></li>
-      <li class="social"> <a href="http://facebook.com"> <i class="fa fa-facebook"></i> <span class="hide">Link do Facebooka</span> </a> </li>
-      <li class="social"> <a href="http://instagram.com"> <i class="fa fa-instagram"></i> <span class="hide">Link do Instagrama</span> </a> </li>
-    </ul>
-  </nav>
-</div>
-<script>	
-     $("#handle").on("click", function() {
-       $("#menu").toggleClass("closed"); });
+	<button id="handle" class="handle">Menu</button>	
+	<ul id="menu" class="closed">
+		<li><a href="#">Element</a></li>
+		<li><a href="#">Element</a></li>
+		<li><a href="#">Element</a></li>
+		<li><a href="#">Element</a></li>
+		<li><a href="#">Element</a></li>
+	</ul>
+	
+	<script>
+		$("#handle").on("click",function(){
+			$("#menu").toggleClass("closed");
+		});
 	</script>
 </body>
 </html>
